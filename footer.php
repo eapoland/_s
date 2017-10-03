@@ -11,10 +11,10 @@
 
 ?>
 
-	</div><!-- #content -->
+	</main><!-- .page-main -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
+	<footer class="background">
+		<div class="container-fluid page-container page-footer">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'efektywnyaltruizm-org' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */
 				printf( esc_html__( 'Proudly powered by %s', 'efektywnyaltruizm-org' ), 'WordPress' );

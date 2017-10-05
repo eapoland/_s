@@ -37,10 +37,16 @@
         endif;
         ?>
 
+        <input type="checkbox" id="menu-toggle" class="main-menu__input"/>
+        <label for="menu-toggle" class="main-menu__label"></label>
+        <div class="menu-overlay"></div>
+
         <?php
           wp_nav_menu( array(
             'theme_location' => 'menu-1',
             'menu_id'        => 'primary-menu',
+            'menu_class'     => 'main-menu',
+            'container'      => 'ul',
           ) );
         ?>
       </nav>

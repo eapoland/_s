@@ -27,15 +27,11 @@
     <div class="container-fluid page-container">
 
       <nav class="page-header__nav">
-        <?php
-        the_custom_logo();
-        if ( is_front_page() && is_home() ) : ?>
-          <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-        <?php else : ?>
-          <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-        <?php
-        endif;
-        ?>
+        <?php the_custom_logo(); ?>
+
+        <span class="logo__text">
+          <?php echo highlight_first_world(get_bloginfo( 'name' )); ?>
+        </span>
 
         <input type="checkbox" id="menu-toggle" class="main-menu__input"/>
         <label for="menu-toggle" class="main-menu__label"></label>

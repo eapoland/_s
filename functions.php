@@ -139,6 +139,14 @@ function efektywnyaltruizm_org_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'efektywnyaltruizm_org_scripts' );
 
+function highlight_first_world($text) {
+  $words = explode(' ', $text);
+
+  $words[0] = '<strong>' . $words[0] . '</strong>';
+
+  return implode(' ', $words);
+}
+
 /**
  * Implement the Custom Header feature.
  */

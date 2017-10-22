@@ -11,8 +11,6 @@
 
 ?>
 
-	</main><!-- .page-main -->
-
 	<footer class="background">
 		<div class="container-fluid page-container page-footer">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'efektywnyaltruizm-org' ) ); ?>"><?php

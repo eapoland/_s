@@ -49,4 +49,3 @@
     </div>
 	</header><!-- #masthead -->
 
-	<main class="page-main">
